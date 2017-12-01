@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+ 		<style>
+		
+		#ms{
+			width:75%;
+			display:inline-block;
+			resize: none;
+		}
+		#bt{
+			
+			display:inline-block;
+		}
+        </style>
+
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script src="frontend.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+  <div data-role="header">
+    <h1>Chat App</h1>
+  </div>
+
+	<div data-role="main" class="ui-content">
+		<section>
+				<div class="viewport">
+					<div class="overview" id="content">
+					</div>
+				</div>
+		</section>
+		 <div data-role="footer" data-position="fixed">
+			<center><div>
+				<div id="ms">
+					<input type="text" name="msg" id="msg">
+				</div>
+				<div id="bt">
+					<input type="submit" value="Enviar" onclick="send_msg()">
+				</div>
+			</div></center>
+		</div>
+	</div>
+</div> 
+
+</body>
+</html>
